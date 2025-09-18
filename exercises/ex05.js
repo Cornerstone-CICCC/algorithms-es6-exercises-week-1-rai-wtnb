@@ -26,3 +26,57 @@ var shirtSleeve = 8.47; // size M (medium)
 Then print N/A to the console because the measurements don't all match up with one particular size.
 
 */
+const width = 23; // size L (large)
+const length = 30; // size L (large)
+const sleeve = 8.71; // size L (large)
+
+if (
+  width >= 18 &&
+  width < 20 &&
+  length >= 28 &&
+  length < 29 &&
+  sleeve >= 8.13 &&
+  sleeve < 8.38
+) {
+  console.log("S");
+} else if (
+  width >= 20 &&
+  width < 22 &&
+  length >= 29 &&
+  length < 30 &&
+  sleeve >= 8.38 &&
+  sleeve < 8.63
+) {
+  console.log("M");
+} else if (
+  width >= 22 &&
+  width < 24 &&
+  length >= 30 &&
+  length < 31 &&
+  sleeve >= 8.63 &&
+  sleeve < 8.88
+) {
+  console.log("L");
+} else if (
+  width >= 24 &&
+  width < 26 &&
+  length >= 31 &&
+  length < 33 &&
+  sleeve >= 8.88 &&
+  sleeve < 9.63
+) {
+  console.log("XL");
+} else if (
+  width >= 26 &&
+  width < 28 &&
+  length >= 33 &&
+  length < 34 &&
+  sleeve >= 9.63 &&
+  sleeve < 10.13
+) {
+  console.log("2XL");
+} else if (width >= 28 && length >= 34 && sleeve >= 10.13) {
+  console.log("3XL");
+} else {
+  console.log("N/A");
+}
