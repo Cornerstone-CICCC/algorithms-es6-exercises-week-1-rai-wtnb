@@ -4,3 +4,18 @@ Call the emotions() function so that it prints the output you see below, but ins
 emotions("happy", laugh(2)); // you can use your laugh function from the previous quizzes
 Prints: "I am happy, haha!"
 */
+
+function emotions(myString, myFuncResult) {
+  console.log("I am " + myString + ", " + myFuncResult);
+}
+
+emotions(
+  "happy",
+  (function (count) {
+    let sound = "";
+    for (let i = 0; i < count; i++) {
+      sound += "ha";
+    }
+    return sound + "!";
+  })(2)
+);
