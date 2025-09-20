@@ -12,11 +12,14 @@ For example, 10 is divisible by 2 because 10 / 2 = 5 with no remainder.
 You can check if a number is divisible by another number by checking if x % y === 0.
 
 */
-
-var x = 1;
-
-while (/* your stop condition goes here */) {
-    // check divisibility
-    // print Fizz, Buzz, or FizzBuzz
-    // increment x
+for (let x = 1; x <= 100; x++) {
+  if (x % 3 === 0 && x % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (x % 3 === 0) {
+    console.log("Fizz");
+  } else if (x % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(x);
+  }
 }
